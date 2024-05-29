@@ -1,0 +1,112 @@
+POST http://localhost:3000/registerAdmin
+Content-Type: application/json
+
+{
+    "username":"A_1",
+    "password":"1234",
+    "name":"Boss",
+    "email":"Boss@gmail.com",
+    "phoneNumber":"0123456789",
+    "role":"Admin"
+}
+
+###
+POST http://localhost:3000/login1
+Content-Type: application/json
+
+{
+    "username":"A_1",
+    "password":"1234"
+}
+
+###
+POST http://localhost:3000/register
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDk0NzJmZTdkNDAwYzc3OWQ1ODNlZjMiLCJ1c2VybmFtZSI6IkFfMSIsInBhc3N3b3JkIjoiJDJiJDEwJHJqNWRBbGttV0hwUVVScHFZajFocmVXS242RGoxa05INi9HWFJ3ZXlkOG9Ya3lIYTFEOGd1IiwibmFtZSI6IkJvc3MiLCJlbWFpbCI6IkJvc3NAZ21haWwuY29tIiwicGhvbmVOdW1iZXIiOiIwMTIzNDU2Nzg5Iiwicm9sZSI6IkFkbWluIiwiaWF0IjoxNjg3NDUwMzc5LCJleHAiOjE2ODc0NTM5Nzl9.LdjrfmE1Z_LhVDARzqJvOKTRebJXLW2c_IchMreuUAM
+Content-Type: application/json
+
+{
+    "username":"H_1",
+    "password":"1234",
+    "name":"Host1",
+    "email":"Host1@gmail.com",
+    "phoneNumber":"0123456789"
+}
+
+###
+POST http://localhost:3000/login1
+Content-Type: application/json
+
+{
+    "username":"H_1",
+    "password":"1234"
+}
+
+###
+POST http://localhost:3000/register
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDk0NzMxODdkNDAwYzc3OWQ1ODNlZjQiLCJ1c2VybmFtZSI6IkhfMSIsInBhc3N3b3JkIjoiJDJiJDEwJDlsUWJZUC5jTFY3dm5Ldk1GdS9SeGVxVFo2ZFVwQmZwUjhMSlhLaGlHbUtDbUhTbk9WMjhPIiwibmFtZSI6Ikhvc3QxIiwiZW1haWwiOiJIb3N0MUBnbWFpbC5jb20iLCJyb2xlIjoiSG9zdCIsInZpc2l0b3JzIjpbIlZfMSJdLCJpYXQiOjE2ODc0NTEzMjksImV4cCI6MTY4NzQ1NDkyOX0.WvASLlfChr-tCDnf6IBrwB6AFLKcM1j9ht1Y6IZV600
+Content-Type: application/json
+
+{
+    "username":"V_1",
+    "password":"1234",
+    "name":"Visitor1",
+    "email":"Visitor1@gmail.com",
+    "phoneNumber":"0123456789"
+}
+
+###
+POST http://localhost:3000/login1
+Content-Type: application/json
+
+{
+    "username":"V_1",
+    "password":"12345"
+}
+
+###
+GET http://localhost:3000/read
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDk0NzMxODdkNDAwYzc3OWQ1ODNlZjQiLCJ1c2VybmFtZSI6IkhfMSIsInBhc3N3b3JkIjoiJDJiJDEwJDlsUWJZUC5jTFY3dm5Ldk1GdS9SeGVxVFo2ZFVwQmZwUjhMSlhLaGlHbUtDbUhTbk9WMjhPIiwibmFtZSI6Ikhvc3QxIiwiZW1haWwiOiJIb3N0MUBnbWFpbC5jb20iLCJyb2xlIjoiSG9zdCIsInZpc2l0b3JzIjpbIlZfMSJdLCJpYXQiOjE2ODc0NTA2NjQsImV4cCI6MTY4NzQ1NDI2NH0._eg-KUsSY8Y_l9-htOLgqw8WxJerzhUnJVohlVas3VM
+
+
+###
+PATCH http://localhost:3000/update
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDk0NzM5ZWU0ZTk3YWZkOGYzOTkyMTIiLCJ1c2VybmFtZSI6IlZfMSIsInBhc3N3b3JkIjoiJDJiJDEwJEx3TWJPeVg3TGlpSElJM2ZKTGNtRGVSSDV5ZHF2TXhpMXhkWVN2TFFyTlBtOEtrRUNLVjl5IiwibmFtZSI6IlZvbWcxIiwiZW1haWwiOiJWaXNpdG9yMUBnbWFpbC5jb20iLCJyb2xlIjoiVmlzaXRvciIsImhvc3QiOiJIXzEiLCJyZWNvcmRzIjpbIlJfMSJdLCJpYXQiOjE2ODc0NTI3MzIsImV4cCI6MTY4NzQ1NjMzMn0.ZcugLW5h3ZX-Y7g6CYQ7RsxTp9sr9qOcSlP_br6YhQU
+Content-Type: application/json
+
+{
+    "password":"12345",
+    "email":"Visitor1@gmail.com",
+    "name": "Vomg1"
+}
+
+###
+DELETE http://localhost:3000/deleteUser
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDk0NzQ4YmU0ZTk3YWZkOGYzOTkyMTQiLCJ1c2VybmFtZSI6IlZfMiIsInBhc3N3b3JkIjoiJDJiJDEwJHBGWHV5OXVKd0F4MzRydUNjVVNFZGVCdjh5b1N2R1d6VzVuSGUuWlQ1ZVM1SjE1TlE1eHZLIiwibmFtZSI6IlZpc2l0b3IxIiwiZW1haWwiOiJWaXNpdG9yMUBnbWFpbC5jb20iLCJyb2xlIjoiVmlzaXRvciIsImhvc3QiOiJIXzEiLCJyZWNvcmRzIjpbXSwiaWF0IjoxNjg3NDUwNzc0LCJleHAiOjE2ODc0NTQzNzR9.g-5l2vRR-_AOxzQkp8hiLlF4_19eeo1cjbpMtkC2J9Y
+
+###
+POST http://localhost:3000/checkIn
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDk0NzM5ZWU0ZTk3YWZkOGYzOTkyMTIiLCJ1c2VybmFtZSI6IlZfMSIsInBhc3N3b3JkIjoiJDJiJDEwJEx3TWJPeVg3TGlpSElJM2ZKTGNtRGVSSDV5ZHF2TXhpMXhkWVN2TFFyTlBtOEtrRUNLVjl5IiwibmFtZSI6IlZpc2l0b3IxIiwiZW1haWwiOiJWaXNpdG9yMUBnbWFpbC5jb20iLCJyb2xlIjoiVmlzaXRvciIsImhvc3QiOiJIXzEiLCJyZWNvcmRzIjpbXSwiaWF0IjoxNjg3NDUwNTMxLCJleHAiOjE2ODc0NTQxMzF9.1RL5JB8zbjPglfst5bDZyX-EkWbPaEkBMpLLsjEV094
+Content-Type: application/json
+
+{
+    "recordID":"R_1",
+    "purpose":"Visit"
+}
+
+###
+PATCH http://localhost:3000/checkOut
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDk0NzM5ZWU0ZTk3YWZkOGYzOTkyMTIiLCJ1c2VybmFtZSI6IlZfMSIsInBhc3N3b3JkIjoiJDJiJDEwJEx3TWJPeVg3TGlpSElJM2ZKTGNtRGVSSDV5ZHF2TXhpMXhkWVN2TFFyTlBtOEtrRUNLVjl5IiwibmFtZSI6IlZpc2l0b3IxIiwiZW1haWwiOiJWaXNpdG9yMUBnbWFpbC5jb20iLCJyb2xlIjoiVmlzaXRvciIsImhvc3QiOiJIXzEiLCJyZWNvcmRzIjpbXSwiaWF0IjoxNjg3NDUwNTMxLCJleHAiOjE2ODc0NTQxMzF9.1RL5JB8zbjPglfst5bDZyX-EkWbPaEkBMpLLsjEV094
+
+###
+POST http://localhost:3000/checkIn
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDk0NzQ4YmU0ZTk3YWZkOGYzOTkyMTQiLCJ1c2VybmFtZSI6IlZfMiIsInBhc3N3b3JkIjoiJDJiJDEwJHBGWHV5OXVKd0F4MzRydUNjVVNFZGVCdjh5b1N2R1d6VzVuSGUuWlQ1ZVM1SjE1TlE1eHZLIiwibmFtZSI6IlZpc2l0b3IxIiwiZW1haWwiOiJWaXNpdG9yMUBnbWFpbC5jb20iLCJyb2xlIjoiVmlzaXRvciIsImhvc3QiOiJIXzEiLCJyZWNvcmRzIjpbXSwiaWF0IjoxNjg3NDUwNzc0LCJleHAiOjE2ODc0NTQzNzR9.g-5l2vRR-_AOxzQkp8hiLlF4_19eeo1cjbpMtkC2J9Y
+Content-Type: application/json
+
+{
+    "recordID":"R_2",
+    "purpose":"Visit"
+}
+
+###
+PATCH http://localhost:3000/checkOut
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDk0NzQ4YmU0ZTk3YWZkOGYzOTkyMTQiLCJ1c2VybmFtZSI6IlZfMiIsInBhc3N3b3JkIjoiJDJiJDEwJHBGWHV5OXVKd0F4MzRydUNjVVNFZGVCdjh5b1N2R1d6VzVuSGUuWlQ1ZVM1SjE1TlE1eHZLIiwibmFtZSI6IlZpc2l0b3IxIiwiZW1haWwiOiJWaXNpdG9yMUBnbWFpbC5jb20iLCJyb2xlIjoiVmlzaXRvciIsImhvc3QiOiJIXzEiLCJyZWNvcmRzIjpbXSwiaWF0IjoxNjg3NDUwNzc0LCJleHAiOjE2ODc0NTQzNzR9.g-5l2vRR-_AOxzQkp8hiLlF4_19eeo1cjbpMtkC2J9Y
